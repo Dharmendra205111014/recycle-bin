@@ -1,0 +1,14 @@
+@mixin gen-props($prefix, $property) {
+
+	@each $color-name,
+	$color in $baseColors {
+		.#{$prefix}-#{$color-name} {
+			#{$property}: $color
+		}
+	}
+}
+
+@mixin disabled() {
+	pointer-events: none;
+	opacity: 0.5;
+}

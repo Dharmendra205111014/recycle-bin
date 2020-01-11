@@ -1,0 +1,23 @@
+//colors
+@import "./mixins.scss";
+
+$white: #FFF;
+$black: #000;
+$success: #47AD89;
+$danger: #BD5B57;
+$warning: #E0D07B;
+$link: #7578C7;
+$primary: #A6ABAB;
+
+$baseColors: (
+	white: $white,
+	black: $black,
+	success: $success,
+	danger: $danger,
+	warning: $warning,
+	link: $link,
+	primary: $primary
+);
+
+@include gen-props('has-text', 'color');
+@include gen-props('has-background', 'background');
